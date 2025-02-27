@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://jeccac.in/Home/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Jyothi Engineering College</title>
+        <link href="http://jeccac.in/Home/images/jyothilog.png" rel="icon">
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        
+        <link href="./index_files/css2" rel="stylesheet">
+
+        <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./index_files/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="./index_files/magnific-popup.css">
+
+        <link href="./index_files/aos.css" rel="stylesheet">
+        <link href="./index_files/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./index_files/all.min.css">
+        <link href="./index_files/templatemo-nomad-force.css" rel="stylesheet">
+<!--
+
+TemplateMo 567 Nomad Force
+
+https://templatemo.com/tm-567-nomad-force
+
+-->
+<style>
+ .section-padding {
+    padding: 20px;
+}
+
+.portfolio-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.portfolio-controls button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.portfolio-row {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 1rem 0;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Full width */
+}
+
+.portfolio-thumb {
+    flex: 0 0 300px; /* Fixed width for portfolio items */
+    margin-right: 1rem;
+}
+
+.portfolio-thumb img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the area without distortion */
+    border-radius: 8px; /* Optional: Adds rounded corners for a polished look */
+}
+
+/* Hide scrollbar */
+.portfolio-row::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for webkit browsers */
+}
+
+</style>
+<style>
+img#chat {
+    border: none; /* Remove any border */
+    outline: none; /* Remove any outline */
+}
+    .option {
+        display: inline-block;
+        background-color: #cab01a; /* Bootstrap primary button color */
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .option:hover {
+        background-color: #cab01a; /* Darker shade for hover effect */
+    }
+    #chat {
+    width: 60px; /* Increased width */
+    height: 60px; /* Increased height */
+    line-height: 60px; /* Adjust line height to vertically center the text/icon */
+    font-size: 24px; /* Increased font size for larger icon/text */
+    border-radius: 30px; /* Adjust to half of the new height for a circle shape */
+    bottom: 30px; /* Increase bottom spacing if needed */
+    right: 30px; /* Increase right spacing if needed */
+}
+
+
+#chat, #chat:after, .chatbox {
+    transition: all .4s ease-in-out;
+}
+#chat, #close-chat, .minim-button, .maxi-button, .chat-text {
+    font-weight: 700;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+#chat, #close-chat, .chatbox {
+    border: 1px solid #A8A8A8;
+}
+#chat:after, #chat:before {
+    position: absolute;
+    border-style: solid;
+    content: "";
+}
+.chatbox {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 50px; /* Adjust right spacing as needed */
+    width: 300px; /* Fixed width for the chatbox */
+    max-height: 80vh; /* Maximum height for the chatbox */
+    overflow-y: auto; /* Enable vertical scrollbar when content exceeds max height */
+    background: #fff;
+    border: 1px solid #A8A8A8;
+    padding: 28px 10px 10px;
+    z-index: 100000;
+    transition: all .4s ease-in-out;
+}
+
+
+#close-chat {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 24px;
+    border: 1px solid #dedede;
+    width: 20px;
+    background: #fefefe;
+    z-index: 2;
+}
+#minim-chat, #maxi-chat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.minim-button, .maxi-button {
+    position: absolute;
+    top: 2px;
+    right: 26px;
+    font-size: 24px;
+    border: 1px solid #dedede;
+    width: 20px;
+    background: #fefefe;
+}
+.chat-text {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 16px;
+}
+#chat {
+    position: fixed; /* Change from 'absolute' to 'fixed' */
+    bottom: 20px; /* Adjust bottom spacing as needed */
+    right: 20px; /* Adjust right spacing as needed */
+    z-index: 9999; /* Ensure it's above other content */
+}
+#chat:before {
+    border-width: 10px 11px 0 0;
+    border-color: #A8A8A8 transparent transparent;
+    left: 7px;
+    bottom: -10px;
+}
+#chat:after {
+    border-width: 9px 8px 0 0;
+    border-color: #fff transparent transparent;
+    left: 8px;
+    bottom: -8px;
+}
+#chat:hover {
+    background: #ddd;
+    animation-name: hvr-pulse-grow;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#chat:hover:after {
+    border-color: #ddd transparent transparent !important;
+}
+
+ /* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+    </head>
+    
+    <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  
+        <main>
+            <div id="fullScreenImage" style="position: fixed; z-index: 1000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: none; align-items: center; justify-content: center;">
+    <img src="./index_files/20241217AdmissionEnquiryWebsite.jpg" alt="B.Tech Admission Schedule" style="max-width: 70%; max-height: 70%; object-fit: contain; cursor: pointer;" onclick="window.location.href=&#39;https://jeccac.in/Admission/&#39;;">
+    <span id="closeImage" style="position: absolute; top: 20px; right: 30px; font-size: 40px; color: white; cursor: pointer;">
+        ×
+    </span>
+</div>
+
+
+
+
+            <section class="hero" id="hero">
+                <div class="heroText">
+                    <h2 class="text-white mt-5 mb-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="800">
+                        JYOTHI ENGINEERING COLLEGE
+                    </h2>
+
+                    <p class="text-secondary-white-color aos-init aos-animate" data-aos="fade-up" data-aos-delay="1000">
+                        CHERUTHURUTHY, KERALA, INDIA
+                    </p>
+                </div>
+
+                <div class="videoWrapper">
+                                        <video id="introVideo" autoplay="" loop="" muted="" class="custom-video" poster="videos/13890_JEC_NEW.jpg">
+                        <source src="http://jeccac.in/Home/jechome_admin/assets/videos/JY.mp4" alt="JY.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+                                    </div>
+
+                <div class="overlay">
+                    
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index_files/jquery.min.js.download"></script>
+    <script src="./index_files/gsap.min.js.download"></script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tickerwrapper {
+            position: relative;
+            left: 0;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        ul.list {
+            position: relative;
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap; /* Ensure all list items are in one line */
+        }
+
+        ul.list.cloned {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        ul.list li {
+            display: inline-block; /* Ensure each list item is inline-block */
+            padding-left: 20px;
+        }
+
+        .containers {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            background-color: transparent;
+            padding: 10px 0;
+        }
+        
+    </style>
+
+
+    <!--</?php -->
+    <!--    $newsData = $this->db->select('*')->from('news_events')->where('department_id', $department_id)->where('status', 'A')->get()->result_array();-->
+    <!--?>-->
+        <div class="containers mx-5">
+        <div class="tickerwrapper">
+            <ul class="list" style="width: 0px; transform: translate(0px, 0px);">
+                            </ul>
+        <ul class="list cloned" style="width: 0px; transform: translate(0px, 0px);">
+                            </ul></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var $tickerWrapper = $(".tickerwrapper");
+            var $list = $tickerWrapper.find("ul.list");
+            var $clonedList = $list.clone();
+            var listWidth = 0;
+
+            $list.find("li").each(function () {
+                listWidth += $(this).outerWidth(true);
+            });
+
+            $list.add($clonedList).css({
+                "width": listWidth + "px"
+            });
+
+            $clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+            var speed = 100; // The lower the value, the faster the scroll
+
+            var duration = listWidth / speed;
+
+            var infinite = gsap.timeline({ repeat: -1, paused: true });
+
+            infinite
+                .fromTo($list, { x: 0 }, { x: -listWidth, ease: "linear", duration: duration }, 0)
+                .fromTo($clonedList, { x: listWidth }, { x: 0, ease: "linear", duration: duration }, 0)
+                .set($list, { x: listWidth })
+                .to($clonedList, { x: -listWidth, ease: "linear", duration: duration }, duration)
+                .to($list, { x: 0, ease: "linear", duration: duration }, duration)
+                .progress(1).progress(0)
+                .play();
+
+            $tickerWrapper.on("mouseenter", function() {
+                infinite.pause();
+            }).on("mouseleave", function() {
+                infinite.play();
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrolls = document.querySelector('.tickerwrapper');
+            
+            // Add event listeners for hover
+            scrolls.addEventListener('mouseover', () => {
+                scrolls.classList.add('paused');
+            });
+
+            scrolls.addEventListener('mouseout', () => {
+                scrolls.classList.remove('paused');
+            });
+
+            // Truncate text
+            const truncateText = (text, maxLength) => {
+                if (text.length > maxLength) {
+                    return text.slice(0, maxLength) + '...';
+                }
+                return text;
+            };
+
+            const notices = document.querySelectorAll('.listitem a');
+            notices.forEach(notice => {
+                const fullText = notice.getAttribute('data-full-text');
+                notice.textContent = truncateText(fullText, 50); 
+            });
+        });
+    </script>
+
+
+                </div>
+            </section>
+ 
+            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 76px;"><nav class="navbar navbar-expand-lg bg-light shadow-lg" style="">
+                <div class="container">
+                    <a class="navbar-brand" href="http://jeccac.in/Home/">
+                        <strong>JEC Home</strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <!--<li class="nav-item active">-->
+                            <!--    <a class="nav-link" href="http://jeccac.in/Home/">Home</a>-->
+                            <!--</li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://jeccac.in/Home/Jec360/jec360">JEC 360<sup>0</sup></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://jeccac.in/Home/Oversight/oversight">Administration</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="Tai/tai">TAI</a>
+                            </li> -->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://jeccac.in/Home/Policy_documents/policy_documents">Policy Documents</a>
+                            </li>
+
+                            <!--<li class="nav-item">-->
+                            <!--    <a class="nav-link" href="Facts_figures/facts_figures">Facts & Figures</a>-->
+                            <!--</li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://jeccac.in/Home/Resources/resources">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://jeccac.in/Home/JecNews/jecnews">JEC News</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav></div>
+
+            <section class="section-padding pb-0" id="about">
+                <div class="container mb-5 pb-lg-5">
+                    <div class="row">
+                        <div class="col-12">
+                          <center>  <h2 class="mb-3 aos-init" data-aos="fade-up">About JEC</h2></center>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-3 mb-lg-5">
+                            <p class="me-4 aos-init" data-aos="fade-up" data-aos-delay="300" align="justify"><b>Jyothi Engineering College (JEC), established in 2002, under the aegis of Trichur Educational Trust, founded by the Catholic Archdiocese of Trichur, is one of the leading engineering colleges in Kerala . This college is affiliated to APJ Abdul Kalam Technological University, Thiruvananthapuram, Kerala and offers various BTech, MTech, PhD programmes in Engineering, Science and Technology. The Archdiocese of Trichur has an illustrious track record of a century and a quarter in the education sector.</b></p>
+                            <p class="me-4 aos-init" data-aos="fade-up" data-aos-delay="300" align="justify"><b>Jyothi Engineering College is a NAAC re-accredited institution with Grade ‘A’.  Six of the undergraduate programs offered by Jyothi Engineering College have NBA accreditation, which indicates that the college is well recognized for the quality of education it offers. The college is periodically evaluated for the stringent NBA accreditation criterion in order to ensure that  it sustains the mandated quality levels.</b></p>
+                            <p class="me-4 aos-init" data-aos="fade-up" data-aos-delay="300" align="justify"><b>The worlds of study and work have changed dramatically. Students of today require different sets of skills than those of previous generations. We are in the midst of the Fourth Industrial Revolution and the recent predictions are that 85% of the jobs that will emerge in 2030 have not been invented yet.</b></p>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+                            <p data-aos="fade-up" data-aos-delay="500" align="justify" class="aos-init"><b>Jyothi Engineering College prepares students to become T-Shaped professionals, i.e., professionals who have in-depth expertise in their specific discipline as well as a breadth of competencies in various domains, required in the 21st century. In order to train our students to become “T” shaped professionals, making them “future ready”, the college has set up a “high end” incubation center, viz. Integrated Industrial Incubation Centre (IIIC), in association with TATA Technologies.</b></p>
+                            <p data-aos="fade-up" data-aos-delay="500" align="justify" class="aos-init"><b>Additionally, for the students desirous of being “job creators” rather than “job seekers”, Jyothi Engineering College has also set up a Technology Business Incubator, JEC TBI, foster an entrepreneurial spirit among students and commercialize R&amp;D output and to help students create technology based new enterprises.</b></p>
+                            <p data-aos="fade-up" data-aos-delay="500" align="justify" class="aos-init"><b>Jyothi Engineering College offers a vibrant, beautiful, green and environment friendly campus, and excellent infrastructure for students, to aid the teaching and learning process. For more information visit www.jecc.ac.in.</b></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 p-0">
+                            <section id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                                                                                                <div class="carousel-item">
+                                            <img src="./index_files/img20240613_10201399b1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Blessing of the Foundation Stone</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    01 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_10134896b.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Blessing of the Foundation Stone	</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    01 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_10224700a.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Blessing of the Foundation Stone	</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    01 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_11395311b.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Blessing of the Foundation Stone</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    01 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_10154023b.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Blessing of the Foundation Stone</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    01 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/jyothi_003_-2002.JPG" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Front View of the First Buliding</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    12 Oct 2002                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240621_12204458.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240621_12240604.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15144776.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15202775.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15275346.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15284226.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15293106.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15305118.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15324323.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15332985.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15342194.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240627_15351239.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Administrative block blessing and Inauguration</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    18 Oct 2005                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_12260190a.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Eastern block blessing</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    30 Nov -0001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_12260190b.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Eastern block blessing</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    30 Nov -0001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_12295361a.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Eastern block blessing</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    30 Nov -0001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item">
+                                            <img src="./index_files/img20240613_12295361b.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Eastern block blessing</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    30 Nov -0001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item active">
+                                            <img src="./index_files/img20240613_13424977a.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Eastern block blessing</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    30 Nov -0001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/jyothi_003_-20021.JPG" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Eastern block blessing</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    30 Nov -0001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_10134896b1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_10154023b1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_10201399b2.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_10224700a1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_10224700a2.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_11395311b1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                                    <div class="carousel-item ">
+                                            <img src="./index_files/img20240613_11513887a1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Foundation Stone Blessing and Laying</h6>
+                                                <p class="text-secondary-white-color mb-0">
+                                                    11 May 2001                                                </p>
+                                            </div>
+                                        </div>
+                                                                                                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </section>
+                        </div>
+
+
+                        <div class="col-lg-4 col-12 bg-dark">  
+                            <div class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
+                                <h3 class="text-white mb-3 aos-init" data-aos="fade-up">Jyothi Engineering College</h3>
+
+                                <p class="text-secondary-white-color aos-init" data-aos="fade-up" align="justify">Jyothi Engineering College is a Center of Excellence in Science &amp; Technology founded by the Catholic Archdiocese of Thrissur situated in Cheruthuruthy, Thrissur.</p>
+
+                                <div class="mt-3 custom-links">
+                                                                            <a href="http://jeccac.in/Home/jechome_admin/assets/policy_doc/JECC_MandatoryDisclosure.pdf" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="100" target="_blank">Mandatory Disclosure</a>
+                                                                         <a href="https://jeccac.in/Home/images/UGC_Undertaking.pdf" target="_blank" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="300">UGC Undertaking</a>
+                                                                            <a href="http://jeccac.in/Home/jechome_admin/assets/policy_doc/Organogram_2023.pdf" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="300" target="_blank">Organogram</a>
+                                                                         <a href="https://jeccac.in/grs/" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="300">Grievances Redressal System</a>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 p-0">  
+                            <section id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                                                                                                <div class="carousel-item">
+                                            <img src="./index_files/Andrews_thazhath,_Trichur_Archdiose.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Mar Andrews Thazhath</h6>
+                                                <p class="text-secondary-white-color mb-0">Chairman</p>
+                                            </div>
+                                        </div>
+                                                                            <div class="carousel-item">
+                                            <img src="./index_files/Fr._Jose_Konikkara,_Manager_1.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Msgr Jose Konikkara</h6>
+                                                <p class="text-secondary-white-color mb-0">Manager</p>
+                                            </div>
+                                        </div>
+                                                                            <div class="carousel-item active">
+                                            <img src="./index_files/JEC65511.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Fr. David Nettikadan</h6>
+                                                <p class="text-secondary-white-color mb-0">Executive Manager</p>
+                                            </div>
+                                        </div>
+                                                                            <div class="carousel-item">
+                                            <img src="./index_files/DSC_0008_PRINCIPAL_jOSE_p_tHERATTIL.jpg" class="img-fluid team-image" alt="" style="height:300px;">
+
+                                            <div class="team-thumb bg-warning">
+                                                <h6 class="text-white mb-0">Dr. Jose P. Therattil</h6>
+                                                <p class="text-secondary-white-color mb-0"> Principal</p>
+                                            </div>
+                                        </div>
+                                                                    </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" style="display: none;">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next" style="display: none;">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="portfolio">
+                <div class="container">
+                    <h2 class="mb-5 text-center aos-init" data-aos="fade-up">Services</h2>
+                    <div class="portfolio-controls d-flex justify-content-center mb-3">
+                        <!-- Font Awesome Icons for Each Section -->
+                        <i class="fas fa-building" data-id="department" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                        <i class="fas fa-graduation-cap" data-id="placement" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                        <i class="fas fa-book-open" data-id="iqac" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                        <i class="fas fa-user-graduate" data-id="admission" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                        <i class="fas fa-researchgate" data-id="consultancy" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                        <i class="fas fa-users" data-id="alumni" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                        <i class="fas fa-futbol" data-id="extracurricular" style="cursor: pointer; font-size: 24px; margin: 0 10px;"></i>
+                    </div>
+                    <div class="portfolio-row d-flex">
+                        <!-- Departments -->
+                        <div class="portfolio-thumb mb-5 mx-3 aos-init" id="department" data-aos="fade-up">
+                            <a href="https://jeccac.in/Department">
+                                <img src="./index_files/jyothi-engineering-college-office.jpg" class="img-fluid portfolio-image" alt="Departments">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">DEPARTMENTS</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Placement & Training -->
+                        <div class="portfolio-thumb mb-3 aos-init" id="placement" data-aos="fade-up">
+                            <a href="https://jeccac.in/Placement">
+                                <img src="./index_files/Picture1.png" class="img-fluid portfolio-image" alt="Placement &amp; Training">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">PLACEMENT &amp; TRAINING</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- IQAC NAAC NBA -->
+                        <div class="portfolio-thumb mb-3 aos-init" id="iqac" data-aos="fade-up">
+                            <a href="https://jeccac.in/IQAC">
+                                <img src="./index_files/jyothi-engineering-college-thrissur-ho-thrissur-colleges-lb2c5as4eu.avif" class="img-fluid portfolio-image" alt="IQAC NAAC NBA">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">IQAC NAAC NBA</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Admission -->
+                        <div class="portfolio-thumb mb-3 aos-init" id="admission" data-aos="fade-up">
+                            <a href="https://jeccac.in/Admission">
+                                <img src="./index_files/Maharashtra-Polytechnic-Admissions.webp" class="img-fluid portfolio-image" alt="Admission">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">ADMISSION</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Research & Consultancy -->
+                        <div class="portfolio-thumb mb-3 aos-init" id="consultancy" data-aos="fade-up">
+                            <a href="https://jeccac.in/Consultancy">
+                                <img src="./index_files/research_conslty.png" class="img-fluid portfolio-image" alt="Research &amp; Consultancy">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">RESEARCH &amp; CONSULTANCY</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Alumni -->
+                        <div class="portfolio-thumb mb-3 aos-init" id="alumni" data-aos="fade-up">
+                            <a href="https://jeccac.in/Alumni">
+                                <img src="./index_files/IMG_3806.JPG" class="img-fluid portfolio-image" alt="Alumni">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">ALUMNI</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Extra Curricular Activities -->
+                        <div class="portfolio-thumb mb-3 aos-init" id="extracurricular" data-aos="fade-up">
+                            <a href="https://jeccac.in/BeyondAcademics">
+                                <img src="./index_files/talleres-extracurriculares-cronol1.jpg" class="img-fluid portfolio-image" alt="Extra Curricular Activities">
+                                <div class="portfolio-info">
+                                    <h6 class="portfolio-title mb-0">EXTRA CURRICULAR ACTIVITIES</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--<section class="section-padding" id="portfolio">-->
+            <!--    <div class="container">-->
+            <!--        <div class="row">-->
+
+            <!--            <div class="col-12">-->
+            <!--                <h2 class="mb-5 text-center" data-aos="fade-up">Services</h2>-->
+            <!--            </div>-->
+
+            <!--            <div class="col-lg-6 col-12">-->
+            <!--                <div class="portfolio-thumb mb-5" data-aos="fade-up">-->
+            <!--                    <a href="../Department">-->
+            <!--                        <img src="images/jyothi-engineering-college-office.jpg" class="img-fluid portfolio-image" alt="">-->
+                               
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">DEPARTMENTS</h4>-->
+            <!--                     </a>-->
+            <!--                        <p class="text-danger"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+
+            <!--                <div class="portfolio-thumb" data-aos="fade-up">-->
+            <!--                    <a href="../Placement">-->
+            <!--                        <img src="images/Picture1.png" class="img-fluid portfolio-image" alt="">-->
+                                
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">PLACEMENT & TRAINING</h4>-->
+            <!--                    </a>-->
+            <!--                        <p class="text-success"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+            <!--            </div>-->
+
+            <!--            <div class="col-lg-6 col-12">-->
+            <!--                <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">-->
+            <!--                    <a href="../IQAC">-->
+            <!--                        <img src="images/jyothi-engineering-college-thrissur-ho-thrissur-colleges-lb2c5as4eu.avif" class="img-fluid portfolio-image" alt="">-->
+                                
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">IQAC NAAC NBA</h4></a>-->
+
+            <!--                        <p class="text-warning"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+
+            <!--                <div class="portfolio-thumb" data-aos="fade-up">-->
+            <!--                    <a href="../Admission">-->
+            <!--                        <img src="images/Maharashtra-Polytechnic-Admissions.webp" class="img-fluid portfolio-image" alt="">-->
+                                
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">ADMISSION</h4></a>-->
+
+            <!--                        <p class="text-info"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+            <!--            </div>-->
+            <!--            <div class="col-lg-6 col-12">-->
+            <!--                <div class="portfolio-thumb mb-5" data-aos="fade-up">-->
+            <!--                    <a href="../Consultancy">-->
+            <!--                        <img src="images/research_conslty.png" class="img-fluid portfolio-image" alt="">-->
+                                
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">RESEARCH & CONSULTANCY</h4></a>-->
+
+            <!--                        <p class="text-danger"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+            <!--                <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">-->
+            <!--                    <a href="../Alumni">-->
+            <!--                        <img src="images/IMG_3806.JPG" class="img-fluid portfolio-image" alt="">-->
+                              
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">ALUMNI</h4></a>-->
+
+            <!--                        <p class="text-warning"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+            <!--            </div>-->
+
+            <!--            <div class="col-lg-6 col-12">-->
+                            
+            <!--            <div class="portfolio-thumb" data-aos="fade-up">-->
+            <!--                    <a href="../BeyondAcademics">-->
+            <!--                        <img src="images/talleres-extracurriculares-cronol1.jpg" class="img-fluid portfolio-image" alt="">-->
+                               
+
+            <!--                    <div class="portfolio-info">                     -->
+            <!--                        <h4 class="portfolio-title mb-0">EXTRA CURRICULAR ACTIVITIES</h4></a>-->
+
+            <!--                        <p class="text-success"></p>-->
+            <!--                    </div>-->
+            <!--                </div> -->
+            <!--            </div>-->
+
+
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</section>-->
+
+            <section class="news section-padding" id="news">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center aos-init" data-aos="fade-up">News &amp; Events</h2>
+                        </div>
+                                                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        
+                            <div class="news-thumb aos-init" data-aos="fade-up">
+                                <a href="http://jeccac.in/Home/Home/news_events/News" class="news-image-hover news-image-hover-warning">
+                                    <img src="./index_files/2025_02_20_TECHNOLOGIES_GLOBAL_2021-2025.jpg" alt="2025_02_20_TECHNOLOGIES_GLOBAL_2021-2025.jpg" class="img-fluid large-news-image news-image">
+                                </a>
+
+                                <div class="news-category bg-warning text-white">News</div>
+                                
+                                <div class="news-text-info">
+                                    <h5 class="news-title">
+                                        <a href="http://jeccac.in/Home/Home/news_events" class="news-title-link">Congratulations</a>
+                                    </h5>
+
+                                    <span class="text-muted">20 Feb 2025</span>
+                                </div>
+                            </div>
+                       
+                        </div>
+                         
+                        <div class="col-lg-6 col-12">
+                                                        <div class="news-thumb news-two-column d-flex flex-column flex-lg-row aos-init" data-aos="fade-up">
+                                <div class="news-top w-100">
+                                    
+                                    <a href="http://jeccac.in/Home/Home/news_events/Events" class="news-image-hover news-image-hover-primary">
+                                        <img src="./index_files/National_Science_Day_2025_.1.jpg" class="img-fluid news-image" alt="">
+                                    </a>
+
+                                <div class="news-category bg-primary text-white">Events</div>
+                                </div>
+                                
+                                <div class="news-bottom w-100">
+                                    <div class="news-text-info">
+                                        <h5 class="news-title">
+                                            <a href="http://jeccac.in/Home/Home/news_events" class="news-title-link">NATIONAL SCIENCE DAY CELEBRATION 2025</a>
+                                        </h5>
+
+                                        <div class="d-flex flex-wrap">                                          
+                                            <span class="text-muted">24 Feb 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             
+                                                        <div class="news-thumb news-two-column d-flex flex-column flex-lg-row aos-init" data-aos="fade-up">
+                                <div class="news-top w-100">
+                                    
+                                    <a href="http://jeccac.in/Home/Home/news_events/Media" class="news-image-hover news-image-hover-primary">
+                                        <img src="./index_files/2025_02_07_DEEPIKA_-_ATAL_FDP_EEE.jpg" class="img-fluid news-image" alt="">
+                                    </a>
+
+                                <div class="news-category bg-success text-white">Media</div>
+                                </div>
+                                
+                                <div class="news-bottom w-100">
+                                    <div class="news-text-info">
+                                        <h5 class="news-title">
+                                            <a href="http://jeccac.in/Home/Home/news_events" class="news-title-link">ATAL FDP EEE</a>
+                                        </h5>
+
+                                        <div class="d-flex flex-wrap">                                          
+                                            <span class="text-muted">07 Feb 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                             
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Service Start -->
+            <div class="col-12">
+                <h2 class="mb-5 text-center aos-init" data-aos="fade-up">Courses offered</h2>
+            </div>
+            <div class="container-xxl service py-5">
+                <div class="container">
+                    <div class="text-center wow fadeInUp aos-init" data-aos="fade-up">
+                        <!-- <h6 class="text-primary text-uppercase">// Our Services //</h6> -->
+                        <!--<h2 class="mb-5">Policy Documents</h2>-->
+                    </div>
+                    <div class="row g-4 wow fadeInUp" data-aos-delay="100">
+                        <div class="col-lg-4">
+                            <div class="nav w-100 nav-pills me-4">
+                                <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                                    <i class="fas fa-lightbulb fa-2x me-3 icon"></i>
+                                    <h6 class="m-0">Bachelor of Technology  (BTech) Courses</h6>
+                                </button>
+                                <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                                    <i class="fas fa-file-alt fa-2x me-3 icon"></i>
+                                    <h6 class="m-0">Master of Technology (MTech) Courses</h6>
+                                </button>
+                                <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                                    <i class="fab fa-sistrix fa-2x me-3 icon"></i>
+                                    <h6 class="m-0">Doctor of Philosophy (PhD)</h6>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="tab-content w-100">
+                                <div class="tab-pane fade show active" id="tab-pane-1">
+                                    <div class="row g-4">
+                                        <div class="col-md-6" style="min-height: 350px;">
+                                            <div class="position-relative h-100">
+                                                <img class="position-absolute img-fluid w-100 h-100" src="./index_files/jyothi front3.jpg" style="object-fit: cover;" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="mb-3">Bachelor of Technology  (BTech) Courses</h3>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Artificial Intelligence and Data Science (AD)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Civil Engineering (CE)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Computer Science and Engineering (CSE)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Computer Science and Engineering (Cyber Security)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Electronics and Communication Engineering (ECE)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Electrical and Electronics Engineering (EEE)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Mechanical Engineering (ME)</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Mechatronics Engineering (MR)</b></p>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-pane-2">
+                                    <div class="row g-4">
+                                        <div class="col-md-6" style="min-height: 350px;">
+                                            <div class="position-relative h-100">
+                                                <img class="position-absolute img-fluid w-100 h-100" src="./index_files/jyothi front3.jpg" style="object-fit: cover;" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="mb-3">Master of Technology (MTech) Courses</h3>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Computer Science and Engineering</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Communication Engineering and Signal Processing</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Industrial Automation and Robotics</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Power Electronics</b></p>
+                                            <p><i class="fa-solid fa-star text-warning me-3"></i><b>Transportation Engineering</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-pane-3">
+                                    <div class="row g-4">
+                                        <div class="col-md-6" style="min-height: 350px;">
+                                            <div class="position-relative h-100">
+                                                <img class="position-absolute img-fluid w-100 h-100" src="./index_files/jyothi front3.jpg" style="object-fit: cover;" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="mb-3">Doctor of Philosophy (PhD)</h3>
+                                            <p align="justify"><i class="fa-solid fa-star text-warning me-3"></i><b>Computer Science and Engineering </b></p>
+                                            <p align="justify"><i class="fa-solid fa-star text-warning me-3"></i><b>Electronics and Communication Engineering</b></p>
+                                            <p align="justify"><i class="fa-solid fa-star text-warning me-3"></i><b>Electrical and Electronics Engineering</b></p>
+                                            <p align="justify"><i class="fa-solid fa-star text-warning me-3"></i><b>Mechanical Engineering</b></p>
+                                            <p align="justify"><i class="fa-solid fa-star text-warning me-3"></i><b>Mathematics</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+            <section class=" contact section-padding" id="contact">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-7 col-12 mx-auto">
+
+                            <h2 class="mb-4 text-center aos-init" data-aos="fade-up">Contact Us</h2>
+
+                            <form role="form" method="post" class="contact-form" action="http://jeccac.in/Home/Home/message" enctype="multipart/form-data">
+
+                                <div class="row">
+                                    
+                                    <div class="col-lg-6 col-6">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required="">
+                                    </div>
+
+                                    <div class="col-lg-6 col-6">
+                                        <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                    </div>
+
+                                    <div class="col-12 my-4">
+                                        <label for="message" class="form-label">How can we help?</label>
+
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                        
+                                    </div>
+
+                                    <!-- <div class="col-12">
+                                        <label for="services" class="form-label">Services<sup class="text-danger">*</sup></label>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="checkbox1" name="checkbox1" class="form-check-input">
+
+                                            <label class="form-check-label" for="checkbox1">Branding</label>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 my-2 my-lg-0">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="checkbox2" name="checkbox2" class="form-check-input">
+
+                                            <label class="form-check-label" for="checkbox2">Digital Experiences</label>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="checkbox3" name="checkbox3" class="form-check-input">
+
+                                            <label class="form-check-label" for="checkbox3">Web Development</label>
+                                          </div>
+                                    </div> -->
+                                </div>
+
+                                <div class="col-lg-5 col-12 mx-auto mt-5">
+                                    <button type="submit" class="form-control">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="google-map">
+                <iframe src="./index_files/embed.html" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                                                                                         <a href="http://jeccac.in/Home/jechome_admin/assets/policy_doc/JECC_MandatoryDisclosure.pdf" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="100" target="_blank"><em>Mandatory Disclosure</em></a>
+                                    <br>
+                      <a href="https://jeccac.in/Home/images/UGC_Undertaking.pdf" target="_blank" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="300">UGC Undertaking</a><br>
+                       <a href="https://jeccac.in/Home/images/UGC_FeeRefundPolicy.pdf" target="_blank" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="300">UGC Fee Refund Policy</a><br>
+                       <a href="https://jeccac.in/Home/images/Internal_Compliant_Committee.pdf" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="100" target="_blank"><em>Internal Complaint Committee</em></a><br>
+                       <a href="https://jeccac.in/grs/" class="text-white custom-link aos-init" data-aos="zoom-in" data-aos-delay="100" target="_blank">  
+                       <em>Grievances Redressal System</em></a><br><br>
+                        <h5 class="text-white">
+                            <i class="bi-geo-alt-fill me-2"></i>
+                            Jyothi Engineering College
+                        </h5>
+                        <h6 class="text-white">Jyothi Hills, Panjal Road, Vettikattiri PO, Cheruthuruthy, Thrissur-679531</h6>
+
+                        <a href="https://jeccac.in/Home/" class="custom-link mt-3 mb-5">
+                            
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <p class="copyright-text mb-0">Copyright © JCS. Designed by <a href="https://jecc.ac.in/" target="_parent">JCS JEC</a></p>
+                    
+                    </div>
+
+                    <div class="col-lg-3 col-5 ms-auto">
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/jecc.ac.in" class="social-icon-link bi-facebook"></a></li>
+
+                            <li><a href="https://x.com/jecctcr" class="social-icon-link bi-twitter"></a></li>
+
+                            <li><a href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQHuULyyYsgsxgAAAZBYW4AwGq2gGlvsupWmtWf882LmvarOf-hndN9S2oYbdBNIviO3-Z5eqx8A-M6Jaz2Wou3_jOo7yO94169xm3B-eFQGfBsZ2VkWkMpAOkKcGLeu6iqW1Ak=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fjyothi-engineering-college" class="social-icon-link bi-linkedin"></a></li>
+
+                            <li><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fjyothiengineeringcollege%2F&amp;is_from_rle" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="https://www.youtube.com/jyothiengineeringcollege" class="social-icon-link bi-youtube"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            
+        </div></footer>
+<!-- Chat Box and Trigger Button -->
+        <img src="./index_files/glass-search.gif" id="chat" class="animated-chat tada" alt="Chat Button" style="cursor:pointer; width:100px; height:100px;">
+        <div class="chatbox" id="chatbox" style="display: none;">
+            <div id="chat-controls">
+                <div id="close-chat" onclick="closeChatbox()">×</div>
+                <div id="minim-chat" onclick="minimChatbox()"><span class="minim-button">−</span></div>
+                <div id="maxi-chat" onclick="loadChatbox()"><span class="maxi-button">+</span></div>
+            </div>
+            <div id="chat-messages">
+                <span class="chat-text">Hello!</span>
+                <!-- Chat content will be dynamically inserted here -->
+            </div>
+            <!-- Add search field with FontAwesome icon -->
+            <div id="search-field" style="position: relative;">
+                <div id="search-results" style="position: relative; margin-bottom: 20px;">
+                    <!-- Filtered results will appear here -->
+                </div>
+
+                <div id="search-field" style="position: relative;">
+                    <div id="search-field" style="position: relative;">
+                        <input type="text" id="search-input" placeholder="Search..." onkeyup="filterSearch()" style="padding-right: 30px; border: 4px solid #ccc; border-radius: 10px; background-color: #f9f9f9; font-size: 14px; color: #333; width: 230px;">
+                        <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #666;" onclick="filterSearch()"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            function filterSearch() {
+                const input = document.getElementById('search-input').value.toLowerCase();
+                const resultsContainer = document.getElementById('search-results');
+
+                if (input.trim() !== '') {
+                    $.ajax({
+                        url: "Home/search_items",
+                        type: "POST",
+                        dataType: "json",
+                        data: {search_term: input},
+                        success: function(response) {
+                            resultsContainer.innerHTML = ''; // Clear previous results
+
+                            response.forEach(function(item) {
+                                const div = document.createElement('div');
+
+                                // For each property, create a button if the property exists
+                                ['section', 'heading', 'subheading', 'sub_subheading', 'sub_subheaddrop'].forEach(property => {
+                                    if (item.hasOwnProperty(property) && item[property]) {
+                                        const button = document.createElement('button');
+                                        button.textContent = item[property];
+                                        button.className = 'btn btn-warning m-1'; // Assuming Bootstrap is used for styling
+                                        
+                                        // Optional: Add an event listener to the button
+                                        button.addEventListener('click', function() {
+                                            getPageLink(item.id, property);
+                                        });
+
+                                        div.appendChild(button);
+                                    }
+                                });
+
+                                // Add details as text if it exists
+                                if (item.hasOwnProperty('details') && item.details) {
+                                    const detailsParagraph = document.createElement('p');
+                                    detailsParagraph.innerHTML = 'Details: ' + item.details;
+                                    div.appendChild(detailsParagraph);
+                                }
+
+                                // Append the result div at the beginning of the container
+                                resultsContainer.insertBefore(div, resultsContainer.firstChild);
+                            });
+                        }
+                    });
+                } else {
+                    resultsContainer.innerHTML = ''; // Clear the results container if the input is empty
+                }
+            }
+
+
+            function getPageLink(id, property) {
+                console.log("ID:", id); // Check if id is correctly received
+                console.log("Property:", property); // Check if property is correctly received
+                
+                $.ajax({
+                    url: "Home/get_page_links",
+                    type: "POST",
+                    dataType: "json",
+                    data: {id: id, property: property}, // Pass id and property to the controller function
+                    success: function(response) {
+                        // Handle the response accordingly, for example, redirect to the page_link
+                        if (response.page_link) {
+                            window.location.href = response.page_link;
+                        } else {
+                            console.log("Page link not found");
+                        }
+                    }
+                });
+            }
+        </script>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Hide the chatbox initially
+                var chatbox = document.getElementById("chatbox");
+                chatbox.style.display = "none";
+
+                var chatIcon = document.getElementById("chat");
+                chatIcon.addEventListener("click", function() {
+                    toggleChatbox();
+                });
+
+                setupChatboxControls();
+            });
+
+            function toggleChatbox() {
+                var chatbox = document.getElementById("chatbox");
+                if (chatbox.style.display === "none" || chatbox.style.display === "") {
+                    loadChatbox();
+                } else {
+                    closeChatbox();
+                }
+            }
+
+            function setupChatboxControls() {
+                var minimButton = document.getElementById("minim-chat");
+                var closeButton = document.getElementById("close-chat");
+                var maxiButton = document.getElementById("maxi-chat");
+
+                minimButton.onclick = minimChatbox;
+                closeButton.onclick = closeChatbox;
+                maxiButton.onclick = loadChatbox;
+            }
+
+            function loadChatbox() {
+                var chatbox = document.getElementById("chatbox");
+                chatbox.style.display = "block";
+                document.getElementById("minim-chat").style.display = "block";
+                document.getElementById("maxi-chat").style.display = "none";
+
+                if (!document.getElementById("chatContentLoaded")) {
+                    addChatContent();
+                }
+            }
+
+            function addChatContent() {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "Home/get_sections", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var sections = JSON.parse(xhr.responseText);
+                        var chatContent = '<div class="message">How can I help you?</div><div class="chat-options">';
+                        sections.forEach(function(section) {
+                        chatContent += `<button onclick="loadHeadings('${encodeURIComponent(section.id)}')" class="option">${section.section}</button>`;
+                        });
+                        chatContent += '</div>';
+                        document.getElementById("chat-messages").innerHTML = chatContent;
+                    }
+                };
+                xhr.send();
+            }
+
+            function loadHeadings(id) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "Home/get_headings/" + id, true); // Use the ID in the URL
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var headings = JSON.parse(xhr.responseText);
+                        var headingContent = '<div class="message">Select a heading:</div><div class="chat-options">';
+                        headings.forEach(function(heading) {
+                            // Use heading.id to pass as an argument in loadSubheadings
+                            headingContent += `<button onclick="loadSubheadings('${encodeURIComponent(id)}', '${encodeURIComponent(heading.id)}')" class="option">${heading.heading}</button>`;
+                        });
+                        headingContent += '</div>';
+                        document.getElementById("chat-messages").innerHTML = headingContent;
+                    }
+                };
+                xhr.send();
+            }
+
+
+
+            function loadSubheadings(sectionId, headingId) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "Home/get_subheadings/" + encodeURIComponent(sectionId) + "/" + encodeURIComponent(headingId), true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var response = JSON.parse(xhr.responseText);
+
+                        // Check if the response has a success status and a page link
+                        if (response.success && response.page_link) {
+                            // Navigate to the page link if provided
+                            window.location.href = response.page_link;
+                        } else if (Array.isArray(response) && response.length > 0) {
+                            // If subheadings are present, display them
+                            var subheadingContent = '<div class="message">Select a subheading:</div><div class="chat-options">';
+                            response.forEach(function(subheading) {
+                                subheadingContent += `<button onclick="loadSubSubheadings('${encodeURIComponent(sectionId)}', '${encodeURIComponent(headingId)}', '${encodeURIComponent(subheading.id)}')" class="option">${subheading.subheading}</button>`;
+                            });
+                            subheadingContent += '</div>';
+                            document.getElementById("chat-messages").innerHTML = subheadingContent;
+                        } else {
+                            // Display an error message if no subheadings or page link found
+                            document.getElementById("chat-messages").innerHTML = '<div class="message error">No subheadings or page links found.</div>';
+                        }
+                    }
+                };
+                xhr.send();
+            }
+
+            function loadSubSubheadings(sectionId, headingId, subheadingId) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", `Home/get_sub_subheadings/${sectionId}/${headingId}/${subheadingId}`, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        // Check if there are sub-subheadings to display
+                        if (Array.isArray(response) && response.length > 0) {
+                            var content = '<div class="message">Select a sub-subheading:</div><div class="chat-options">';
+                            response.forEach(function(item) {
+                                content += `<button onclick="loadSubSubheadingDrop('${sectionId}', '${headingId}', '${subheadingId}', '${item.id}')" class="option">${item.sub_subheading}</button>`;
+                            });
+                            content += '</div>';
+                            document.getElementById("chat-messages").innerHTML = content;
+                        } else if (response.success && response.page_link) {
+                            // If there are no sub-subheadings, but a page link is available
+                            window.location.href = response.page_link;
+                        } else {
+                            // Error handling or fallback
+                            document.getElementById("chat-messages").innerHTML = '<div class="message error">No further details available.</div>';
+                        }
+                    }
+                };
+                xhr.send();
+            }
+
+            function loadSubSubheadingDrop(sectionId, headingId, subheadingId, subSubheadingId) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", `Home/get_sub_subheadingdrop/${sectionId}/${headingId}/${subheadingId}/${subSubheadingId}`, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        if (Array.isArray(response) && response.length > 0) {
+                            // If sub_subheaddrop items exist, show them
+                            var content = '<div class="message">Select an option:</div><div class="chat-options">';
+                            response.forEach(function(item) {
+                                // Now using item.id for the onclick event
+                                content += `<button onclick="handleOptionSelected('${sectionId}', '${headingId}', '${subheadingId}', '${subSubheadingId}', '${item.id}')" class="option">${item.sub_subheaddrop}</button>`;
+                            });
+                            content += '</div>';
+                            document.getElementById("chat-messages").innerHTML = content;
+                        } else if (response.success && response.page_link) {
+                            // Redirect if there's a specific page link instead
+                            window.location.href = response.page_link;
+                        } else {
+                            document.getElementById("chat-messages").innerHTML = '<div class="message error">No options or links found.</div>';
+                        }
+                    }
+                };
+                xhr.send();
+            }
+
+
+            function handleOptionSelected(sectionId, headingId, subheadingId, subSubheadingId, subSubheadDrop) {
+                // Perform an AJAX request to get the page link based on the selected sub_subheaddrop
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", `Home/get_page_link/${sectionId}/${headingId}/${subheadingId}/${subSubheadingId}/${subSubheadDrop}`, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        if (response.success && response.page_link) {
+                            // Redirect to the page link
+                            window.location.href = response.page_link;
+                        } else {
+                            // Display an error message if no page link is found
+                            document.getElementById("chat-messages").innerHTML = '<div class="message error">Page link not found.</div>';
+                        }
+                    }
+                };
+                xhr.send();
+            }
+
+
+
+            function closeChatbox() {
+                var chatbox = document.getElementById("chatbox");
+                chatbox.style.display = "none";
+            }
+
+            function minimChatbox() {
+                var chatbox = document.getElementById("chatbox");
+                chatbox.style.display = "none";
+            }
+        </script>
+        <!-- JAVASCRIPT FILES -->
+        <script src="./index_files/jquery.min(1).js.download"></script>
+        <script src="./index_files/bootstrap.bundle.min.js.download"></script>
+        <script src="./index_files/jquery.sticky.js.download"></script>
+        <script src="./index_files/aos.js.download"></script>
+        <script src="./index_files/jquery.magnific-popup.min.js.download"></script>
+        <script src="./index_files/magnific-popup-options.js.download"></script>
+        <script src="./index_files/scrollspy.min.js.download"></script>
+        <script src="./index_files/custom.js.download"></script>
+        
+        <!--dept section script-->
+        <script>
+            const scrollContainer = document.querySelector('.portfolio-row');
+            const icons = document.querySelectorAll('.portfolio-controls i');
+
+            // Scroll to the specific section based on the icon clicked
+            icons.forEach(icon => {
+                icon.addEventListener('click', () => {
+                    const targetId = icon.getAttribute('data-id');
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        const targetLeft = targetElement.offsetLeft;
+                        const containerCenter = scrollContainer.clientWidth / 2;
+                        const targetCenter = targetElement.clientWidth / 2;
+
+                        scrollContainer.scrollTo({
+                            left: targetLeft - containerCenter + targetCenter,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--dept section script end-->
+<script>
+    $(document).ready(function() {
+    // Track user activity
+    var userActive = false;
+    var userActivityTimeout;
+    var videoElement = document.getElementById('introVideo');
+
+    function resetUserActivityTimeout() {
+        clearTimeout(userActivityTimeout);
+        userActivityTimeout = setTimeout(function() {
+            if (!userActive) {
+                window.location.href = "#about";
+            }
+        }, 10000); // Adjust timeout duration as needed
+    }
+
+    function setUserActive() {
+        userActive = true;
+        clearTimeout(userActivityTimeout);
+    }
+
+    // Detect user activity
+    $(document).on('mousemove', function(event) {
+        // Check if the mouse is not over the chatbox
+        if (!$(event.target).closest("#chatbox").length) {
+            setUserActive();
+        }
+    });
+
+    // Reset user activity timeout when the video is played
+    if (videoElement) {
+        videoElement.addEventListener('play', function() {
+            resetUserActivityTimeout();
+        });
+
+        // Reset user activity timeout on video pause and end
+        videoElement.addEventListener('pause', function() {
+            clearTimeout(userActivityTimeout);
+        });
+
+        videoElement.addEventListener('ended', function() {
+            clearTimeout(userActivityTimeout);
+        });
+    }
+
+    // Initialize user activity tracking
+    resetUserActivityTimeout();
+});
+
+</script>
+<script>
+  // Show the full-screen image when the page loads
+  window.onload = function() {
+    var fullScreenImage = document.getElementById("fullScreenImage");
+    var closeImage = document.getElementById("closeImage");
+    var video = document.getElementById("introVideo");
+
+    // Pause the video until the image is closed
+    video.pause();
+
+    // Function to close the image and play the video
+    function closeImageAndPlayVideo() {
+      fullScreenImage.style.display = "none";
+      video.play();
+    }
+
+    // Close the image when the 'x' is clicked
+    closeImage.onclick = function() {
+      closeImageAndPlayVideo();
+    }
+
+    // Close the image when clicking anywhere on the image
+    fullScreenImage.onclick = function(event) {
+      if (event.target.tagName !== 'IMG') {
+        closeImageAndPlayVideo();
+      }
+    }
+  };
+</script>
+    
+</body></html>
